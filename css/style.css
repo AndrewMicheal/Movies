@@ -1,0 +1,114 @@
+/***************** Start General*****************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d0d0d;
+}
+/***************** End General*******************/
+
+/***************** Start Movie ********************/
+.movie-item .overlay {
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0%;
+  width: 100%;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+.movie-item:hover .overlay {
+  height: 100%;
+}
+/***************** End Movie **********************/
+
+/***************** Start Slider *******************/
+.vertical-navbar {
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.left {
+  width: 0%;
+  background-color: #000;
+  height: 100vh;
+  float: left;
+}
+.left ul {
+  list-style: none;
+  overflow: hidden;
+}
+.left ul li {
+  opacity: 0;
+  padding-top: 500px;
+  text-align: center;
+}
+.left ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 1s;
+}
+.left ul li a:hover {
+  color: #ff655c;
+}
+.left .social-media {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 80%;
+}
+.left .social-media .icons i {
+  margin-right: 20px;
+}
+.social-media-copy-right {
+  line-height: 1.7;
+}
+.right {
+  width: 20%;
+  background-color: #f8f6f6;
+  height: 100vh;
+  float: left;
+  position: relative;
+}
+.right .logo {
+  text-align: center;
+}
+.right .barsIcon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.right .socialIcon {
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/***************** End Slider *********************/
+
+/***************Start Contact******************/
+.contact-title {
+  padding: 0px 0px 0px 10rem;
+  margin-bottom: 2rem;
+}
+.myInput {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.myInput:focus {
+  border: 1px solid #09c;
+  outline: 1px solid #09c;
+  background-color: transparent;
+  color: #fff;
+}
+/***************End Contact******************/
